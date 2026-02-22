@@ -11,12 +11,12 @@ function App() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const loanServices = [
-    { id: 1, name: 'Cây Vàng', logo: cayvangImg, rate: '0%', limit: '10 triệu', approval: '15 phút', link: 'https://assets.clickbuy.asia/click?a=78993&o=935&sub_id1=vay-tieu-dung-online' },
-    { id: 2, name: 'Đồng 247', logo: dong247Img, rate: '0%', limit: '30 triệu', approval: '10 phút', link: 'https://go.dinos.click/click?a=78993&o=302&sub_id1=vay-tieu-dung-online' },
-    { id: 3, name: 'Đồng Sun Shop', logo: dongsunshopImg, rate: '0%', limit: '30 triệu', approval: '5 phút', link: 'https://go.dinos.click/click?a=78993&o=1060&sub_id1=vay-tieu-dung-online' },
-    { id: 4, name: 'Fin Apps', logo: finappsImg, rate: '0%', limit: '20 triệu', approval: '20 phút', link: 'https://go.dinos.click/click?a=78993&o=821&sub_id1=vay-tieu-dung-online' },
-    { id: 5, name: 'Money Cats', logo: moneycatImg, rate: '0%', limit: '10 triệu', approval: '30 phút', link: 'https://go.dinos.click/click?a=78993&o=762&sub_id1=vay-tieu-dung-online' },
-    { id: 6, name: 'Vay VND', logo: vayvndImg, rate: '2.5%', limit: '20 triệu', approval: '45 phút', link: 'https://go.dinos.click/click?a=78993&o=927&sub_id1=vay-tieu-dung-online' }
+    { id: 1, name: 'Cây Vàng', logo: cayvangImg, rate: '0.7%', limit: '10 triệu', approval: '15 phút', link: 'https://assets.clickbuy.asia/click?a=78993&o=935&sub_id1=vay-tieu-dung-online' },
+    { id: 2, name: 'Đồng 247', logo: dong247Img, rate: '0.8%', limit: '30 triệu', approval: '10 phút', link: 'https://go.dinos.click/click?a=78993&o=302&sub_id1=vay-tieu-dung-online' },
+    { id: 3, name: 'Đồng Sun Shop', logo: dongsunshopImg, rate: '0.8%', limit: '30 triệu', approval: '5 phút', link: 'https://go.dinos.click/click?a=78993&o=1060&sub_id1=vay-tieu-dung-online' },
+    { id: 4, name: 'Fin Apps', logo: finappsImg, rate: '0.8%', limit: '20 triệu', approval: '20 phút', link: 'https://go.dinos.click/click?a=78993&o=821&sub_id1=vay-tieu-dung-online' },
+    { id: 5, name: 'Money Cats', logo: moneycatImg, rate: '0.8%', limit: '10 triệu', approval: '30 phút', link: 'https://go.dinos.click/click?a=78993&o=762&sub_id1=vay-tieu-dung-online' },
+    { id: 6, name: 'Vay VND', logo: vayvndImg, rate: '0.9%', limit: '20 triệu', approval: '45 phút', link: 'https://go.dinos.click/click?a=78993&o=927&sub_id1=vay-tieu-dung-online' }
   ];
 
   const testimonials = [
