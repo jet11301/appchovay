@@ -196,14 +196,14 @@ function App() {
           <div className="footer-section">
             <h4>Kết nối</h4>
             <div className="social-links">
-              <a href="#">Facebook</a>
-              <a href="#">Zalo</a>
-              <a href="#">Youtube</a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href="https://zalo.me" target="_blank" rel="noopener noreferrer">Zalo</a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a>
             </div>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2024 Hosito. Tất cả các quyền được bảo lưu. | <a href="#">Chính sách bảo mật</a> | <a href="#">Điều khoản sử dụng</a></p>
+          <p>&copy; 2024 Hosito. Tất cả các quyền được bảo lưu. | <a href="/privacy">Chính sách bảo mật</a> | <a href="/terms">Điều khoản sử dụng</a></p>
         </div>
       </footer>
     </div>
