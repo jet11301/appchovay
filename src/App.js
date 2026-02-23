@@ -52,7 +52,7 @@ function App() {
         <div className="header-container">
           <div className="logo-section">
             <span className="logo-icon">💲</span>
-            <span className="logo-text">Hosito</span>
+            <span className="logo-text">Vay Nhanh Online</span>
           </div>
           <nav className="nav-section">
             <a href="#hero-section" className="nav-link">Trang chủ</a>
@@ -112,35 +112,6 @@ function App() {
                 ))}
               </div>
             </div>
-
-            {/* Testimonials - Container riêng */}
-            <div id="danh-gia" className="testimonials-container-wrapper">
-              <section className="testimonials-section">
-                <h2 className="section-title">Khách Hàng Nói Gì Về Chúng Tôi</h2>
-                <div className="testimonials-inner">
-                  <button className="testimonial-nav prev" onClick={prevTestimonial}>❮</button>
-                  <div className="testimonial-card">
-                    <div className="testimonial-avatar">{testimonials[currentTestimonial].avatar}</div>
-                    <div className="testimonial-info">
-                      <h3 className="testimonial-name">{testimonials[currentTestimonial].name} <span className="testimonial-age">{testimonials[currentTestimonial].age} tuổi</span></h3>
-                      <p className="testimonial-job">{testimonials[currentTestimonial].job}</p>
-                      <div className="testimonial-rating">★★★★★</div>
-                      <p className="testimonial-content">"{testimonials[currentTestimonial].content}"</p>
-                    </div>
-                  </div>
-                  <button className="testimonial-nav next" onClick={nextTestimonial}>❯</button>
-                </div>
-                <div className="testimonial-dots">
-                  {testimonials.map((_, index) => (
-                    <span 
-                      key={index} 
-                      className={`dot ${index === currentTestimonial ? 'active' : ''}`}
-                      onClick={() => setCurrentTestimonial(index)}
-                    ></span>
-                  ))}
-                </div>
-              </section>
-            </div>
           </div>
 
           {/* Right Column - Sidebar */}
@@ -169,6 +140,35 @@ function App() {
               </div>
             </div>
           </aside>
+        </div>
+
+        {/* Testimonials - Full Width Centered */}
+        <div id="danh-gia" className="testimonials-container-wrapper">
+          <section className="testimonials-section">
+            <h2 className="section-title">Khách Hàng Nói Gì Về Chúng Tôi</h2>
+            <div className="testimonials-inner">
+              <button className="testimonial-nav prev" onClick={prevTestimonial}>❮</button>
+              <div className="testimonial-card">
+                <div className="testimonial-avatar">{testimonials[currentTestimonial].avatar}</div>
+                <div className="testimonial-info">
+                  <h3 className="testimonial-name">{testimonials[currentTestimonial].name} <span className="testimonial-age">{testimonials[currentTestimonial].age} tuổi</span></h3>
+                  <p className="testimonial-job">{testimonials[currentTestimonial].job}</p>
+                  <div className="testimonial-rating">★★★★★</div>
+                  <p className="testimonial-content">"{testimonials[currentTestimonial].content}"</p>
+                </div>
+              </div>
+              <button className="testimonial-nav next" onClick={nextTestimonial}>❯</button>
+            </div>
+            <div className="testimonial-dots">
+              {testimonials.map((_, index) => (
+                <span 
+                  key={index} 
+                  className={`dot ${index === currentTestimonial ? 'active' : ''}`}
+                  onClick={() => setCurrentTestimonial(index)}
+                ></span>
+              ))}
+            </div>
+          </section>
         </div>
       </main>
 
